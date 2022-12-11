@@ -1,0 +1,4 @@
+POST http://localhost:8080/person
+Content-Type: application/json
+
+[{"name":"hello","age":18,"female":true},{"name":"hello1","age":18,"female":true},{"name":"hello1","age":18,"female":true},{"name":"hello1","age":18,"female":true},{"name":"hello2","age":18,"female":true}]

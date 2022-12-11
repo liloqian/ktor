@@ -1,0 +1,4 @@
+POST http://localhost:8080/book
+Content-Type: application/json
+
+[{"name":"岛上书店0","author":"leo","price":18},{"name":"岛上书店1","author":"leo","price":18},{"name":"岛上书店2","author":"leo","price":18},{"name":"岛上书店3","author":"leo","price":18},{"name":"岛上书店4","author":"leo","price":18},{"name":"岛上书店5","author":"leo","price":18}]
