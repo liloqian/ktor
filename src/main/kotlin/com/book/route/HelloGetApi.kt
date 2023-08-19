@@ -1,6 +1,6 @@
-package com.leo.route
+package com.book.route
 
-import com.leo.route.api.IGetRouterApi
+import com.app.route.api.IGetRouterApi
 import io.ktor.server.routing.*
 
 class HelloGetApi(override val route: Route): IGetRouterApi() {

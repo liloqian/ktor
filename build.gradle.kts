@@ -1,11 +1,12 @@
 val ktor_version: String by project
 val kotlin_version: String by project
 val logback_version: String by project
+val serialization_version: String by project
 
 plugins {
-    kotlin("jvm") version "1.7.22"
+    kotlin("jvm") version "1.9.0"
     id("io.ktor.plugin") version "2.2.1"
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.7.22"
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.0"
 }
 
 group = "com.leo"
@@ -31,6 +32,9 @@ dependencies {
     implementation("io.ktor:ktor-serialization-gson-jvm:$ktor_version")
     implementation("io.ktor:ktor-server-netty-jvm:$ktor_version")
     implementation("ch.qos.logback:logback-classic:$logback_version")
+    // https://github.com/Kotlin/kotlinx.serialization/tree/master
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serialization_version")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-hocon:$serialization_version")
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 }

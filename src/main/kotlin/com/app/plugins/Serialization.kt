@@ -1,21 +1,27 @@
-package com.leo.plugins
+package com.app.plugins
 
-import com.leo.route.BookGetPostApi
-import com.leo.route.HelloGetApi
-import com.leo.route.PersonGetApi
-import com.leo.route.PersonPostApi
+import com.book.route.BookGetPostApi
+import com.book.route.HelloGetApi
+import com.book.route.PersonGetApi
+import com.book.route.PersonPostApi
 import io.ktor.serialization.gson.*
 import io.ktor.server.application.*
 import io.ktor.server.plugins.contentnegotiation.*
+import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
 fun Application.configureSerialization() {
     install(ContentNegotiation) {
-        gson {
-        }
+        gson {}
     }
 
     routing {
+        /** hello world */
+        get("/") {
+            call.respond("hello world for come here :)")
+        }
+
+        /** retrofit book */
         PersonGetApi(this).register()
         HelloGetApi(this).register()
         PersonPostApi(this).register()

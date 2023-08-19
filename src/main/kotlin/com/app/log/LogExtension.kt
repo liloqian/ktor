@@ -1,4 +1,4 @@
-package com.leo.log
+package com.app.log
 
 import io.ktor.server.request.*
 import io.ktor.util.*

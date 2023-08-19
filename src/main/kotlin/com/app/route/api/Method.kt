@@ -1,14 +1,14 @@
-package com.leo.route.api
+package com.app.route.api
 
 import io.ktor.http.*
 
 sealed class Method(name: String) {
 
-    object HEAD : Method("head")
+    data object HEAD : Method("head")
 
-    object GET : Method("get")
+    data object GET : Method("get")
 
-    object POST : Method("post")
+    data object POST : Method("post")
 }
 
 fun HttpMethod.toMethod(): Method {

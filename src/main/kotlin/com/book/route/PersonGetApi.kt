@@ -1,7 +1,7 @@
-package com.leo.route
+package com.book.route
 
-import com.leo.model.Person
-import com.leo.route.api.IGetRouterApi
+import com.book.model.Person
+import com.app.route.api.IGetRouterApi
 import io.ktor.server.routing.*
 
 class PersonGetApi(override val route: Route) : IGetRouterApi() {

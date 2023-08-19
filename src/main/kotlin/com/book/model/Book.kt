@@ -1,4 +1,4 @@
-package com.leo.model
+package com.book.model
 
 import com.google.gson.annotations.SerializedName
 

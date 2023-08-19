@@ -1,6 +1,6 @@
-package com.leo.route.api
+package com.app.route.api
 
-import com.leo.log.logRequest
+import com.app.log.logRequest
 import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*

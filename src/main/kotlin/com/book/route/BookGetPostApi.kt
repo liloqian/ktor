@@ -1,9 +1,9 @@
-package com.leo.route
+package com.book.route
 
-import com.leo.model.Book
-import com.leo.route.api.IGetPostRouteApi
-import com.leo.route.api.Method
-import com.leo.route.api.toMethod
+import com.book.model.Book
+import com.app.route.api.IGetPostRouteApi
+import com.app.route.api.Method
+import com.app.route.api.toMethod
 import io.ktor.server.request.*
 import io.ktor.server.routing.*
 
