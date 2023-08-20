@@ -41,4 +41,5 @@ dependencies {
     implementation("org.jsoup:jsoup:1.16.1")
     implementation("io.ktor:ktor-client-core:$ktor_version")
     implementation("io.ktor:ktor-client-cio:$ktor_version")
+    implementation("io.ktor:ktor-client-okhttp:$ktor_version")
 }
