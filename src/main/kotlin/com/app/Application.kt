@@ -7,7 +7,7 @@ import io.ktor.server.engine.*
 import io.ktor.server.netty.*
 
 fun main() {
-    embeddedServer(Netty, port = 8080, host = "127.0.0.1", module = Application::module)
+    embeddedServer(Netty, port = CONFIG_PORT, host = CONFIG_HOST, module = Application::module)
         .start(wait = true)
 }
 
@@ -15,3 +15,6 @@ fun Application.module() {
     configureSerialization()
     configureHTTP()
 }
+
+const val CONFIG_HOST = "192.168.1.18"
+const val CONFIG_PORT = 8888

@@ -1,5 +1,7 @@
 package com.wrapper
 
+import com.app.CONFIG_HOST
+import com.app.CONFIG_PORT
 import com.app.route.api.IGetRouterApi
 import io.ktor.server.routing.*
 import java.io.File
@@ -27,7 +29,7 @@ class WallPaperRouteApi(override val route: Route) : IGetRouterApi() {
 }
 
 private const val DOWNLOAD_ROOT_PATH = "src/main/resources/static/bian/"
-private const val PIC_PREFIX_URL = "http://127.0.0.1:8080/static/bian/"
+private const val PIC_PREFIX_URL = "http://${CONFIG_HOST}:${CONFIG_PORT}/static/bian/"
 
 data class WallPaper(val url: String, val name: String)
 data class CategoryData(val name: String, val wrappers: List<WallPaper>)
